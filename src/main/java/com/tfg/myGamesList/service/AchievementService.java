@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface AchievementService {
     
-    List<Achievement>FindAll();
+    List<Achievement>findAll();
 
     Optional<Achievement> findById(Long id);
 

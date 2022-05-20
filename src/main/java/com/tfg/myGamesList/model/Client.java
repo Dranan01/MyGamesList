@@ -4,6 +4,7 @@
  */
 package com.tfg.myGamesList.model;
 
+import com.tfg.myGamesList.model.domain.ClientResume;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -47,4 +48,18 @@ public class Client implements Serializable {
     joinColumns={@JoinColumn(name="clientId")}, 
     inverseJoinColumns={@JoinColumn(name="gameId")})
     private List<Game> games;
+
+    public Client(ClientResume cr) {
+        this.username = cr.getUsername();
+        this.password = cr.getPassword();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

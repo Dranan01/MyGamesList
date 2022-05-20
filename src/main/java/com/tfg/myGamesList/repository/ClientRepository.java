@@ -5,6 +5,7 @@
 package com.tfg.myGamesList.repository;
 
 import com.tfg.myGamesList.model.Client;
+import java.util.Set;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,5 +15,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ClientRepository extends CrudRepository<Client,Long>{
-    
+    Set<Client> findAll();
 }

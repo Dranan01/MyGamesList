@@ -9,18 +9,20 @@ import com.tfg.myGamesList.repository.GameRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author franm
  */
+@Service
 public class GameServiceImpl implements GameService {
     @Autowired
     private GameRepository repository;
 
 
     @Override
-    public List<Game> FindAll() {
+    public List<Game> findAll() {
         return (List<Game>) repository.findAll();
     }
 

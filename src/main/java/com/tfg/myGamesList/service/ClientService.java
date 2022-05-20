@@ -7,6 +7,7 @@ package com.tfg.myGamesList.service;
 import com.tfg.myGamesList.model.Client;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ClientService {
     
-    List<Client>FindAll();
+    Set<Client>findAll();
 
     Optional<Client> findById(Long id);
 

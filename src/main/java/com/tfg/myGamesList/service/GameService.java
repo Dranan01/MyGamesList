@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface GameService {
     
-    List<Game>FindAll();
+    List<Game>findAll();
     
     Optional<Game> findById(Long id);
 

@@ -9,11 +9,13 @@ import com.tfg.myGamesList.repository.AchievementRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author franm
  */
+@Service
 public class AchievementServiceImpl implements AchievementService    {
     
     
@@ -23,7 +25,7 @@ public class AchievementServiceImpl implements AchievementService    {
    
 
     @Override
-    public List<Achievement> FindAll() {
+    public List<Achievement> findAll() {
         return (List<Achievement>) repository.findAll();
     }
 

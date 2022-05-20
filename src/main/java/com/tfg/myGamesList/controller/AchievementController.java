@@ -7,6 +7,7 @@ package com.tfg.myGamesList.controller;
 import com.tfg.myGamesList.model.Achievement;
 import com.tfg.myGamesList.model.Game;
 import com.tfg.myGamesList.repository.AchievementRepository;
+import com.tfg.myGamesList.service.AchievementServiceImpl;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AchievementController {
 
     @Autowired
-    private AchievementRepository achievementRepository;
+    private AchievementServiceImpl achievementImpl;
     
     private final Logger logger = LoggerFactory.getLogger(GameController.class);
 
@@ -37,6 +38,6 @@ public class AchievementController {
         List<Game> games = new ArrayList();
 
         //games = 
-        return (List<Achievement>) achievementRepository.findAll();
+        return (List<Achievement>) achievementImpl.findAll();
     }
 }

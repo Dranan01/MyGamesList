@@ -5,6 +5,7 @@
 package com.tfg.myGamesList.repository;
 
 import com.tfg.myGamesList.model.Achievement;
+import java.util.Set;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,5 +15,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface AchievementRepository extends CrudRepository<Achievement,Long> {
-  
+      Set<Achievement> findAll();
 }
