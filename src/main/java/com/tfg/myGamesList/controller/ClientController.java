@@ -7,6 +7,7 @@ package com.tfg.myGamesList.controller;
 import com.tfg.myGamesList.exception.ClientNotFoundException;
 import com.tfg.myGamesList.model.Client;
 import com.tfg.myGamesList.model.domain.ClientResume;
+import com.tfg.myGamesList.model.domain.ClientResumeNoId;
 import com.tfg.myGamesList.repository.ClientRepository;
 import com.tfg.myGamesList.service.ClientServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,6 +18,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +27,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -82,11 +86,28 @@ public class ClientController {
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "creates a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @PostMapping("/client")
-    public ResponseEntity<Client> addClient(@RequestBody ClientResume cr){
-         Client addedClient = clientImpl.addClient(new Client(cr));
-        return new ResponseEntity<>(addedClient, HttpStatus.CREATED);
+    public ResponseEntity<ClientResume> addClient(@RequestBody ClientResume cr){
         
+         Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
+         clientImpl.addClient(addedClient);
+        return new ResponseEntity<>(cr, HttpStatus.CREATED);
+         }
+    
+    @PutMapping("/client/{id}")
+    public ResponseEntity<ClientResumeNoId> modifyClientUser(@PathVariable long id ,@RequestBody ClientResumeNoId cr){
+        Client c = new Client(cr);
+        clientImpl.modifyClient(id, c);
+         return new ResponseEntity<>(cr, HttpStatus.ACCEPTED);
         
+    }
+    
+    
+    @DeleteMapping("/client/{id}")
+    public ResponseEntity<ClientResume> deleteClient(@PathVariable long id){
+        Client c = clientImpl.findById(id).get();
+        ClientResume cr = new ClientResume(c);
+        clientImpl.deleteClient(id);
+        return new ResponseEntity<>(cr, HttpStatus.GONE);
     }
     
     

@@ -5,6 +5,7 @@
 package com.tfg.myGamesList.model;
 
 import com.tfg.myGamesList.model.domain.ClientResume;
+import com.tfg.myGamesList.model.domain.ClientResumeNoId;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +54,12 @@ public class Client implements Serializable {
         this.username = cr.getUsername();
         this.password = cr.getPassword();
     }
+    
+        public Client(ClientResumeNoId cr) {
+        this.username = cr.getUsername();
+        this.password = cr.getPassword();
+    }
+    
     
     
     

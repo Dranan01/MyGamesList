@@ -21,7 +21,7 @@ public interface ClientService {
 
     Optional<Client> findById(Long id);
 
-    Client addClient(Client client);
+    void addClient(Client client);
 
     Client modifyClient(Long id, Client newClient);
 

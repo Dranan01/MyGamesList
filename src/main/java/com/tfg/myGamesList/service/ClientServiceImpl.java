@@ -12,7 +12,6 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 /**
  *
  * @author franm
@@ -23,8 +22,6 @@ public class ClientServiceImpl implements ClientService {
     @Autowired
     private ClientRepository repository;
 
-
-
     @Override
     public Set<Client> findAll() {
         return (Set<Client>) repository.findAll();
@@ -32,21 +29,29 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public Optional<Client> findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return repository.findById(id);
     }
 
     @Override
-    public Client addClient(Client client) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void addClient(Client client) {
+        repository.save(client);
     }
 
     @Override
     public Client modifyClient(Long id, Client newClient) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Optional<Client> c = repository.findById(id);
+        Client x = c.get();
+        newClient.setClientId(x.getClientId());
+        newClient.setGames(x.getGames());
+        repository.save(newClient);
+
+        return newClient;
     }
 
     @Override
     public void deleteClient(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Optional<Client> client = repository.findById(id);
+        repository.delete(client.get());
+
     }
 }
