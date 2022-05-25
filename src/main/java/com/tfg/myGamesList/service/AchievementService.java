@@ -7,6 +7,7 @@ package com.tfg.myGamesList.service;
 import com.tfg.myGamesList.model.Achievement;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,13 +17,13 @@ import org.springframework.stereotype.Service;
 @Service
 public interface AchievementService {
     
-    List<Achievement>findAll();
+    Set<Achievement>findAll();
 
     Optional<Achievement> findById(Long id);
 
-    Achievement addAchievement(Achievement newAchievement);
+    void addAchievement(Achievement newAchievement);
 
-    Achievement modifyAchievement(Long id, Achievement newAchievement);
+    void modifyAchievement(Long id, Achievement newAchievement);
 
     void deleteAchievement(Long id);
 }

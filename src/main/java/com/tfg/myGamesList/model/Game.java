@@ -4,6 +4,7 @@
  */
 package com.tfg.myGamesList.model;
 
+import com.tfg.myGamesList.model.domain.GameResume;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,4 +57,21 @@ public class Game implements Serializable {
     
     @OneToMany(mappedBy = "achievementId", cascade = CascadeType.ALL)
     private List<Achievement> achievements;
+
+    public Game(GameResume gr) {
+        this.gameId = gr.getGameId();
+        this.name = gr.getName();
+        this.description = gr.getDescription();
+        this.genre = gr.getGenre();
+        this.designer = gr.getDesigner();
+        this.coverPage = gr.getCoverPage();
+        this.releaseYear = gr.getReleaseYear();
+        this.gameScore = 0.0;
+    }
+    
+    
+    
+    
+    
+    
 }

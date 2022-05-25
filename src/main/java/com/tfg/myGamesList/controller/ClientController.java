@@ -6,19 +6,20 @@ package com.tfg.myGamesList.controller;
 
 import com.tfg.myGamesList.exception.ClientNotFoundException;
 import com.tfg.myGamesList.model.Client;
+import com.tfg.myGamesList.model.Game;
 import com.tfg.myGamesList.model.domain.ClientResume;
 import com.tfg.myGamesList.model.domain.ClientResumeNoId;
-import com.tfg.myGamesList.repository.ClientRepository;
+import com.tfg.myGamesList.model.domain.GameList;
 import com.tfg.myGamesList.service.ClientServiceImpl;
+import com.tfg.myGamesList.service.GameServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,6 +50,9 @@ public class ClientController {
     
     @Autowired
     private ClientServiceImpl clientImpl;
+    
+    @Autowired
+    private GameServiceImpl gameImpl;
     
     private final Logger logger = LoggerFactory.getLogger(ClientController.class);
 
@@ -110,6 +114,32 @@ public class ClientController {
         return new ResponseEntity<>(cr, HttpStatus.GONE);
     }
     
+    
+         @Operation(summary = "get the clients gameList")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "get a list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
+    @PostMapping("/client/{id}/GameList")
+    public ResponseEntity<GameList> addClient(@PathVariable long id){
+         Client client = clientImpl.findById(id).get();
+         GameList gl = new GameList(new ArrayList(client.getGames()));
+        return new ResponseEntity<>(gl, HttpStatus.CREATED);
+         }
+        
+    
+         @Operation(summary = "add a new game to the clients gameList")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "add a new game to the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
+    @PostMapping("/game/{id}/client/{id}")
+    public ResponseEntity<GameList> addGameToList(@PathVariable long idGame, @PathVariable long clientId){
+        Client client = clientImpl.findById(clientId).get();
+        Game game = gameImpl.findById(idGame).get();
+        client.getGames().add(game);
+        clientImpl.addClient(client);    
+        GameList gl = new GameList(new ArrayList(client.getGames()));
+        
+        return new ResponseEntity<>(gl, HttpStatus.CREATED);
+         }
+    //TODO Add game to client gameList
     
     
     

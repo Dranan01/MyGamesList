@@ -7,6 +7,7 @@ package com.tfg.myGamesList.service;
 import com.tfg.myGamesList.model.Game;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,13 +17,13 @@ import org.springframework.stereotype.Service;
 @Service
 public interface GameService {
     
-    List<Game>findAll();
+    Set<Game>findAll();
     
     Optional<Game> findById(Long id);
 
-    Game addAchievement(Game newGame);
+    void addGame(Game newGame);
 
-    Game modifyAchievement(Long id, Game newGame);
+    void modifyGame(Long id, Game newGame);
 
     void deleteGame(Long id);
 }

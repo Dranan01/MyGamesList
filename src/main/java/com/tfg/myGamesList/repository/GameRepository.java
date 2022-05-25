@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
  * @author franm
  */
 @Repository
-public interface GameRepository extends CrudRepository<Game,String> {
+public interface GameRepository extends CrudRepository<Game,Long> {
     Set<Game> findAll();
 
 }

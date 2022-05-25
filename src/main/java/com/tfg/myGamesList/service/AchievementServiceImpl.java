@@ -8,6 +8,7 @@ import com.tfg.myGamesList.model.Achievement;
 import com.tfg.myGamesList.repository.AchievementRepository;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,22 +26,22 @@ public class AchievementServiceImpl implements AchievementService    {
    
 
     @Override
-    public List<Achievement> findAll() {
-        return (List<Achievement>) repository.findAll();
+    public Set<Achievement> findAll() {
+        return  repository.findAll();
     }
 
     @Override
     public Optional<Achievement> findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return repository.findById(id);
     }
 
     @Override
-    public Achievement addAchievement(Achievement newAchievement) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void addAchievement(Achievement newAchievement) {
+        repository.save(newAchievement);
     }
 
     @Override
-    public Achievement modifyAchievement(Long id, Achievement newAchievement) {
+    public void modifyAchievement(Long id, Achievement newAchievement) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

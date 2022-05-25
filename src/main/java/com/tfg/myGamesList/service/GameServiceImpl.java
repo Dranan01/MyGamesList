@@ -8,6 +8,7 @@ import com.tfg.myGamesList.model.Game;
 import com.tfg.myGamesList.repository.GameRepository;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,28 +23,29 @@ public class GameServiceImpl implements GameService {
 
 
     @Override
-    public List<Game> findAll() {
-        return (List<Game>) repository.findAll();
+    public Set<Game> findAll() {
+        return  repository.findAll();
     }
 
     @Override
     public Optional<Game> findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+       return repository.findById(id);
     }
 
     @Override
-    public Game addAchievement(Game newGame) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void addGame(Game newGame) {
+        repository.save(newGame);
     }
 
     @Override
-    public Game modifyAchievement(Long id, Game newGame) {
+    public void modifyGame(Long id, Game newGame) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
     public void deleteGame(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        Game g = repository.findById(id).get();
+        repository.delete(g);
     }
     
 }
