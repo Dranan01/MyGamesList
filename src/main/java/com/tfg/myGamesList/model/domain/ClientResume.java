@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Data
 @AllArgsConstructor

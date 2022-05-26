@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Service
 public interface GameService {

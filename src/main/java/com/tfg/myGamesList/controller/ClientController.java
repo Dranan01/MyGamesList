@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import java.util.ArrayList;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.HashSet;
 import java.util.Set;
 import org.slf4j.Logger;
@@ -38,47 +38,43 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
-
-//@Tag(name = "client", description = "list of clients")
+@Tag(name = "client", description = "methods about all the clients on the database")
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/")
 public class ClientController {
-    
-    
+
     @Autowired
     private ClientServiceImpl clientImpl;
-    
+
     @Autowired
     private GameServiceImpl gameImpl;
-    
+
     private final Logger logger = LoggerFactory.getLogger(ClientController.class);
 
-      @Operation(summary = "Obtains a list of every client")
+    @Operation(summary = "Obtains a list of every client")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "List of clients", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
-        @GetMapping("client/")
+    @GetMapping("client/")
     public ResponseEntity<Set<ClientResume>> getClients() {
         logger.info("start getClients");
         Set<Client> clients = clientImpl.findAll();
-        Set<ClientResume>resume = new HashSet<>();
-            for (Client c: clients) {
-                resume.add(new ClientResume(c));
-            }
-        
+        Set<ClientResume> resume = new HashSet<>();
+        for (Client c : clients) {
+            resume.add(new ClientResume(c));
+        }
 
         
-            System.out.println(clientImpl.findAll().toString());
-            logger.info("fin GetClients");
+        logger.info("fin GetClients");
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
-    
-          @Operation(summary = "Obtain a client")
+
+    @Operation(summary = "Obtain a client")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "Get a client with the id", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
-        @GetMapping("/client/{id}")
+    @GetMapping("/client/{id}")
     public ResponseEntity<ClientResume> getClient(@PathVariable long id) {
         Client client = clientImpl.findById(id)
                 .orElseThrow(() -> new ClientNotFoundException(id));
@@ -86,62 +82,73 @@ public class ClientController {
 
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
-     @Operation(summary = "creates a new client without games")
+
+    @Operation(summary = "creates a new client without games")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "creates a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @PostMapping("/client")
-    public ResponseEntity<ClientResume> addClient(@RequestBody ClientResume cr){
-        
-         Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
-         clientImpl.addClient(addedClient);
+    public ResponseEntity<ClientResume> addClient(@RequestBody ClientResume cr) {
+
+        Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
+        clientImpl.addClient(addedClient);
         return new ResponseEntity<>(cr, HttpStatus.CREATED);
-         }
-    
+    }
+
+    @Operation(summary = "modifies the client")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "modifies a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @PutMapping("/client/{id}")
-    public ResponseEntity<ClientResumeNoId> modifyClientUser(@PathVariable long id ,@RequestBody ClientResumeNoId cr){
+    public ResponseEntity<ClientResumeNoId> modifyClientUser(@PathVariable long id, @RequestBody ClientResumeNoId cr) {
         Client c = new Client(cr);
         clientImpl.modifyClient(id, c);
-         return new ResponseEntity<>(cr, HttpStatus.ACCEPTED);
-        
+        return new ResponseEntity<>(cr, HttpStatus.ACCEPTED);
+
     }
-    
-    
+
+        @Operation(summary = "delete a client by his id")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "delete a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @DeleteMapping("/client/{id}")
-    public ResponseEntity<ClientResume> deleteClient(@PathVariable long id){
+    public ResponseEntity<ClientResume> deleteClient(@PathVariable long id) {
         Client c = clientImpl.findById(id).get();
         ClientResume cr = new ClientResume(c);
         clientImpl.deleteClient(id);
         return new ResponseEntity<>(cr, HttpStatus.GONE);
     }
-    
-    
-         @Operation(summary = "get the clients gameList")
+
+    @Operation(summary = "get the clients gameList")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "get a list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
-    @PostMapping("/client/{id}/GameList")
-    public ResponseEntity<GameList> addClient(@PathVariable long id){
-         Client client = clientImpl.findById(id).get();
-         GameList gl = new GameList(new ArrayList(client.getGames()));
+    @GetMapping("/client/{id}/GameList")
+    public ResponseEntity<GameList> getGameList(@PathVariable long id) {
+        Client client = clientImpl.findById(id).get();
+        GameList gl = new GameList(client);
         return new ResponseEntity<>(gl, HttpStatus.CREATED);
-         }
-        
-    
-         @Operation(summary = "add a new game to the clients gameList")
+    }
+
+    @Operation(summary = "add a new game to the clients gameList")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "add a new game to the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
-    @PostMapping("/game/{id}/client/{id}")
-    public ResponseEntity<GameList> addGameToList(@PathVariable long idGame, @PathVariable long clientId){
+    @PostMapping("/game/{gameId}/client/{clientId}")
+    public void addGameToList(@PathVariable long gameId, @PathVariable long clientId) {
         Client client = clientImpl.findById(clientId).get();
-        Game game = gameImpl.findById(idGame).get();
+        Game game = gameImpl.findById(gameId).get();
+
         client.getGames().add(game);
-        clientImpl.addClient(client);    
-        GameList gl = new GameList(new ArrayList(client.getGames()));
-        
-        return new ResponseEntity<>(gl, HttpStatus.CREATED);
-         }
-    //TODO Add game to client gameList
+        clientImpl.addClient(client);
+
+    }
     
-    
-    
-    
+        @Operation(summary = "deletes a game from the gametList of the client ")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "deletes a game from the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
+    @DeleteMapping("/client/{id}/GameList/game/{gameId}")
+    public void deleteGameFromGameList(@PathVariable long id, @PathVariable long gameId) {
+        Client client = clientImpl.findById(id).get();
+        Game game = gameImpl.findById(gameId).get();
+
+        client.getGames().remove(game);
+        clientImpl.addClient(client);
+   
+    }
 }

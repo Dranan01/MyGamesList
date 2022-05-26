@@ -10,7 +10,7 @@ import lombok.Data;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Data
 public class ClientResumeNoId {

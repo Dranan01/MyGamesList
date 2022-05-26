@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
  @Configuration
 public class myGamesListConfig {

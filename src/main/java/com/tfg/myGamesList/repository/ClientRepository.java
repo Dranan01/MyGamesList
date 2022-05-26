@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Repository
 public interface ClientRepository extends CrudRepository<Client,Long>{

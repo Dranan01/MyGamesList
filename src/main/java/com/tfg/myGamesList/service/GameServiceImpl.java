@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Service
 public class GameServiceImpl implements GameService {

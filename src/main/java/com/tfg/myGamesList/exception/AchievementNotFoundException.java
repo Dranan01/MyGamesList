@@ -6,7 +6,7 @@ package com.tfg.myGamesList.exception;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 public class AchievementNotFoundException extends RuntimeException{
     public AchievementNotFoundException() {

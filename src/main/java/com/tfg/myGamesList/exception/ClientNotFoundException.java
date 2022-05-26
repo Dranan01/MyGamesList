@@ -1,9 +1,9 @@
 package com.tfg.myGamesList.exception;
 
 /**
- * Excepción de producto no encontrado
- * @author Santiago Faci
- * @version Curso 2020-2021
+ * 
+ * @author Francisco Miguel Pérez
+ * 
  */
 public class ClientNotFoundException extends RuntimeException {
 

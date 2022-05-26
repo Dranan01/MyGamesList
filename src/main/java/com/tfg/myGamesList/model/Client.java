@@ -25,12 +25,12 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity(name = "clients") //Lo cambio porque password es una palabra reservada de MYSQL
+@Entity(name = "clients") 
 public class Client implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

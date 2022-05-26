@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @Service
 public class AchievementServiceImpl implements AchievementService    {
@@ -47,7 +47,7 @@ public class AchievementServiceImpl implements AchievementService    {
 
     @Override
     public void deleteAchievement(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        repository.deleteById(id);
     }
     
 }

@@ -4,6 +4,7 @@
  */
 package com.tfg.myGamesList.model.domain;
 
+import com.tfg.myGamesList.model.Achievement;
 import com.tfg.myGamesList.model.Client;
 import com.tfg.myGamesList.model.Game;
 import java.util.ArrayList;
@@ -15,21 +16,18 @@ import lombok.Data;
  * @author Francisco Miguel Pérez
  */
 @Data
-public class GameList {
+public class ClientList {
+    private String gameName;
+    private List<ClientResume> clients;
 
-    private String clientName;
-    private List<GameResume> game;
-
-    public GameList(Client client) {
-        game = new ArrayList();
-        this.clientName = client.getUsername();
-        List<Game> gameRes = client.getGames();
-        for (Game games : gameRes) {
-            System.out.println(game.toString());
-            GameResume gameResume = new GameResume(games);
-            this.game.add(gameResume);
+    public ClientList(Game game) {
+        clients = new ArrayList();
+        this.gameName = game.getName();
+        List<Client> clientRes = game.getClients();
+        for (Client client : clientRes) {
+            ClientResume ClientResume = new ClientResume(client);
+            this.clients.add(ClientResume);
 
         }
     }
-
 }

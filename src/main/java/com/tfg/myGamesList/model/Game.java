@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author franm
+ * @author Francisco Miguel Pérez
  */
 @AllArgsConstructor
 @NoArgsConstructor
@@ -67,6 +67,11 @@ public class Game implements Serializable {
         this.coverPage = gr.getCoverPage();
         this.releaseYear = gr.getReleaseYear();
         this.gameScore = 0.0;
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" + "gameId=" + gameId + ", name=" + name + ", description=" + description + ", genre=" + genre + ", designer=" + designer + ", coverPage=" + coverPage + ", releaseYear=" + releaseYear + ", gameScore=" + gameScore + ", clients=" + clients + ", achievements=" + achievements + '}';
     }
     
     
