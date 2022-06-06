@@ -27,7 +27,14 @@ public class ClientResume {
     
     @Schema(description = "password of the client, used for log in", example = "@1234Potatoe", required = true)
     private String password;
+    
+    @Schema(description = "boolean to know if the client i logged or not", example ="true", required = true)
+    private boolean logged;
+    
+    @Schema(description = "profilePic direction", example ="assets/users/1", required = true)
+    private String profilePic;
 
+    
     public ClientResume(Client c) {
         this.clientId = c.getClientId();
         this.username = c.getUsername();

@@ -36,7 +36,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Francisco Miguel Pérez
  */
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin
 @Tag(name = "game", description = "methods about all the games on the database")
 @RestController
 public class GameController {

@@ -6,13 +6,17 @@ package com.tfg.myGamesList.model.domain;
 
 import com.tfg.myGamesList.model.Game;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author Francisco Miguel Pérez
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class GameResumeNoId {
     @Schema(description = "name of the game", example = "Dark souls", required = true)
     private String name;

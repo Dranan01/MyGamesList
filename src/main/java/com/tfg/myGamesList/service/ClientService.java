@@ -26,5 +26,7 @@ public interface ClientService {
     Client modifyClient(Long id, Client newClient);
 
     void deleteClient(Long id);
+    
+    Optional<Client> findByUsername(String username);
 
 }

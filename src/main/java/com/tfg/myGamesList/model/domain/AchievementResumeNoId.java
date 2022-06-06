@@ -5,14 +5,17 @@
 package com.tfg.myGamesList.model.domain;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author Francisco Miguel Pérez
  */
 @Data
-
+@AllArgsConstructor
+@NoArgsConstructor
 public class AchievementResumeNoId {
         @Schema(description = "a short description of the achievement", example = "Survive a solar eclipse, a day darker than night filled with creatures of horror.", required = true)
     private String achDescription;

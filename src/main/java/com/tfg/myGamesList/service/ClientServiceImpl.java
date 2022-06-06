@@ -54,4 +54,19 @@ public class ClientServiceImpl implements ClientService {
         repository.delete(client.get());
 
     }
+
+    @Override
+    public Optional<Client> findByUsername(String username) {
+
+        Set<Client> clients = repository.findAll();
+        for (Client c : clients) {
+            if (c.getUsername().equals(username)) {
+                
+               return Optional.of(c);
+            }
+        }
+        Client vacio = new Client();
+
+        return Optional.of(vacio);
+    }
 }

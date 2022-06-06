@@ -20,6 +20,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,7 +42,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Francisco Miguel Pérez
  */
 @Tag(name = "client", description = "methods about all the clients on the database")
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin
 @RestController
 @RequestMapping("/")
 public class ClientController {
@@ -70,6 +71,21 @@ public class ClientController {
         logger.info("fin GetClients");
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
+    
+    
+        @Operation(summary = "Obtains a list of every client")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "List of clients", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
+    @GetMapping("client/username/{username}")
+    public ResponseEntity<ClientResume> getClientsByUsername(@PathVariable String username) {
+        logger.info("start getClients");
+        Client c = clientImpl.findByUsername(username).get();
+        ClientResume resume = new ClientResume(c);
+        
+        
+        logger.info("fin GetClients");
+        return new ResponseEntity<>(resume, HttpStatus.OK);
+    }
 
     @Operation(summary = "Obtain a client")
     @ApiResponses(value = {
@@ -85,12 +101,13 @@ public class ClientController {
 
     @Operation(summary = "creates a new client without games")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "creates a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
+        @ApiResponse(responseCode = "200", description = "creates a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResumeNoId.class)))),})
     @PostMapping("/client")
-    public ResponseEntity<ClientResume> addClient(@RequestBody ClientResume cr) {
-
+    public ResponseEntity<ClientResumeNoId> addClient(@RequestBody ClientResumeNoId cr) {
+        logger.info("start addClient");
         Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
         clientImpl.addClient(addedClient);
+         logger.info("end addClient");
         return new ResponseEntity<>(cr, HttpStatus.CREATED);
     }
 

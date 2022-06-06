@@ -19,8 +19,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
+import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 
 
 /**
@@ -42,6 +44,12 @@ public class Client implements Serializable {
     @Column(name="_password") //Lo cambio porque password es una palabra reservada de MYSQL
     private String password;
     
+    @Column
+    @ColumnDefault(value = "false")
+    private boolean logged;
+    
+    @Column
+    private String profilePic;
     
     
     @ManyToMany(cascade = CascadeType.DETACH)

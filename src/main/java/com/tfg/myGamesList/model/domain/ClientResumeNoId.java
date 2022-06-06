@@ -6,13 +6,17 @@ package com.tfg.myGamesList.model.domain;
 
 import com.tfg.myGamesList.model.Client;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author Francisco Miguel Pérez
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ClientResumeNoId {
 
     @Schema(description = "username of the client, used for log in", example = "XxMatthyxX", required = true)
@@ -20,16 +24,16 @@ public class ClientResumeNoId {
 
     @Schema(description = "password of the client, used for log in", example = "@1234Potatoe", required = true)
     private String password;
+    
+    @Schema(description = "boolean to know if the client i logged or not", example = "true", required = true)
+    private boolean logged;
+    
+    @Schema(description = "profilePic direction", example = "assets/users/1", required = true)
+    private String profilePic;
 
     public ClientResumeNoId(Client c) {
         this.username = c.getUsername();
         this.password = c.getPassword();
     }
 
-
-    
-    
-    
-    
-    
 }

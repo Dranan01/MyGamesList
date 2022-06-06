@@ -8,13 +8,17 @@ import com.tfg.myGamesList.model.Client;
 import com.tfg.myGamesList.model.Game;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author Francisco Miguel Pérez
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class GameList {
 
     private String clientName;
