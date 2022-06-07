@@ -61,6 +61,8 @@ public class Client implements Serializable {
     public Client(ClientResume cr) {
         this.username = cr.getUsername();
         this.password = cr.getPassword();
+        this.logged = cr.isLogged();
+        this.profilePic = cr.getProfilePic();
     }
     
         public Client(ClientResumeNoId cr) {

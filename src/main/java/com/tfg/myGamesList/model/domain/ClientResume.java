@@ -39,6 +39,7 @@ public class ClientResume {
         this.clientId = c.getClientId();
         this.username = c.getUsername();
         this.password = c.getPassword();
+        this.profilePic = c.getProfilePic();
     }
 
 }

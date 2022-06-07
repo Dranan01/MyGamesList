@@ -43,7 +43,9 @@ public class ClientServiceImpl implements ClientService {
         Client x = c.get();
         newClient.setClientId(x.getClientId());
         newClient.setGames(x.getGames());
+        System.out.println("En clientServiceImpl " + newClient.isLogged());
         repository.save(newClient);
+   
 
         return newClient;
     }

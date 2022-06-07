@@ -115,9 +115,13 @@ public class ClientController {
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "modifies a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @PutMapping("/client/{id}")
-    public ResponseEntity<ClientResumeNoId> modifyClientUser(@PathVariable long id, @RequestBody ClientResumeNoId cr) {
+    public ResponseEntity<ClientResume> modifyClientUser(@PathVariable long id, @RequestBody ClientResume cr) {
+        logger.info("start modifyClient");
+        
         Client c = new Client(cr);
+        System.out.println("ESTA LOGUEADO?" + c.isLogged());
         clientImpl.modifyClient(id, c);
+        logger.info("end modifyClient");
         return new ResponseEntity<>(cr, HttpStatus.ACCEPTED);
 
     }
