@@ -4,6 +4,7 @@
  */
 package com.tfg.myGamesList.model.domain;
 
+import com.tfg.myGamesList.model.Achievement;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +18,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AchievementResumeNoId {
-        @Schema(description = "a short description of the achievement", example = "Survive a solar eclipse, a day darker than night filled with creatures of horror.", required = true)
+   
+    @Schema(description = "the name of the achievement", example = "Fireborn", required = true)
+    private String achName;
+    
+    @Schema(description = "a short description of the achievement", example = "Survive a solar eclipse, a day darker than night filled with creatures of horror.", required = true)
     private String achDescription;
     
     @Schema(description = "the location of the image of the achievement", example = "c:/games/game/{gameName}/achievement/1", required = true)
@@ -28,4 +33,20 @@ public class AchievementResumeNoId {
     
     @Schema(description = "The difficult to obtain the achievemnt", example = "easy", required = true)
     private String difficulty;
+
+    public AchievementResumeNoId(Achievement ach) {
+        this.achName = ach.getAchName();
+        this.achDescription = ach.getAchDescription();
+        this.achImage = ach.getAchImage();
+        this.isDone = ach.isDone();
+        this.difficulty = ach.getDifficulty();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }

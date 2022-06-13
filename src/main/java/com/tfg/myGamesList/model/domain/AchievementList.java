@@ -17,20 +17,25 @@ import lombok.NoArgsConstructor;
  * @author Francisco Miguel Pérez
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class AchievementList {
-    private String gameName;
     private List<AchievementResume> achievements;
 
-    public AchievementList(Game game) {
-        achievements = new ArrayList();
-        this.gameName = game.getName();
-        List<Achievement> achievementsRes = game.getAchievements();
-        for (Achievement achievement : achievementsRes) {
-            AchievementResume achievementResume = new AchievementResume(achievement);
-            this.achievements.add(achievementResume);
-
+    public AchievementList(List<Achievement> ach){
+        ArrayList<AchievementResume> temp = new ArrayList();
+        for (Achievement achievement:ach) {
+            
+            AchievementResume resume = new AchievementResume(achievement);
+            temp.add(resume);
+                    
         }
+        
+        this.achievements = temp;
+        
     }
+   
+   
+    
+    
+    
 }

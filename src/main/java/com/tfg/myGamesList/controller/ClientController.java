@@ -20,6 +20,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import org.slf4j.Logger;
@@ -106,6 +107,14 @@ public class ClientController {
     public ResponseEntity<ClientResumeNoId> addClient(@RequestBody ClientResumeNoId cr) {
         logger.info("start addClient");
         Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
+        Client temp = clientImpl.findByUsername(addedClient.getUsername()).get();
+        
+        if (temp == null) {
+            System.out.println("EN ERROR");
+            getErrorResponse();
+            return new ResponseEntity<>(cr, HttpStatus.CONFLICT);
+        }
+        
         clientImpl.addClient(addedClient);
          logger.info("end addClient");
         return new ResponseEntity<>(cr, HttpStatus.CREATED);
@@ -150,14 +159,18 @@ public class ClientController {
     @Operation(summary = "add a new game to the clients gameList")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "add a new game to the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
-    @PostMapping("/game/{gameId}/client/{clientId}")
-    public void addGameToList(@PathVariable long gameId, @PathVariable long clientId) {
+    @GetMapping("/client/{clientId}/game/{gameId}")
+    public ResponseEntity<GameList> addGameToList(@PathVariable long gameId, @PathVariable long clientId) {
+        logger.info("ADDING GAME TO LIST");
+        
         Client client = clientImpl.findById(clientId).get();
         Game game = gameImpl.findById(gameId).get();
 
         client.getGames().add(game);
         clientImpl.addClient(client);
-
+        GameList gl = new GameList(client);
+        logger.info("ENDING ADDING GAME TO LIST");
+        return new ResponseEntity<>(gl, HttpStatus.ACCEPTED);
     }
     
         @Operation(summary = "deletes a game from the gametList of the client ")
@@ -172,4 +185,9 @@ public class ClientController {
         clientImpl.addClient(client);
    
     }
+    
+        public ResponseEntity<Response> getErrorResponse(){
+        return new ResponseEntity<>(Response.errorResonse(500, "That username alreadyExists"), HttpStatus.CONFLICT);
+    }
+    
 }

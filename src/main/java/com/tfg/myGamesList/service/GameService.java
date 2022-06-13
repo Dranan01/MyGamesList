@@ -16,9 +16,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface GameService {
-    
-    Set<Game>findAll();
-    
+
+    Set<Game> findAll();
+
     Optional<Game> findById(Long id);
 
     void addGame(Game newGame);
@@ -26,4 +26,6 @@ public interface GameService {
     void modifyGame(Long id, Game newGame);
 
     void deleteGame(Long id);
+
+    Optional<Game> findByName(String username);
 }

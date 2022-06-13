@@ -18,28 +18,32 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AchievementResume {
+
     @Schema(description = "Id of the achievement", example = "1", required = true)
     private Long achievementId;
-    
+
+    @Schema(description = "the name of the achievement", example = "Fireborn", required = true)
+    private String achName;
+
     @Schema(description = "a short description of the achievement", example = "Survive a solar eclipse, a day darker than night filled with creatures of horror.", required = true)
     private String achDescription;
-    
+
     @Schema(description = "the location of the image of the achievement", example = "c:/games/game/{gameName}/achievement/1", required = true)
     private String achImage;
 
     @Schema(description = "An indicator to know if the achievement is completed or not", example = "true", required = true)
     private boolean isDone;
-    
+
     @Schema(description = "The difficult to obtain the achievemnt", example = "easy", required = true)
     private String difficulty;
 
     public AchievementResume(Achievement ach) {
+        this.achName = ach.getAchName();
         this.achievementId = ach.getAchievementId();
         this.achDescription = ach.getAchDescription();
         this.achImage = ach.getAchImage();
         this.isDone = ach.isDone();
         this.difficulty = ach.getDifficulty();
     }
-    
-    
+
 }

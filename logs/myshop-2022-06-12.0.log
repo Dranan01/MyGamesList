@@ -1,0 +1,953 @@
+2022-06-12 17:09:04,809 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 18228 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:09:04,815 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:09:05,929 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:09:06,190 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:09:07,023 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:09:07,037 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:09:07,038 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:09:07,039 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:09:07,167 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:09:07,168 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2263 ms
+2022-06-12 17:09:07,552 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:09:07,627 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:09:07,814 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:09:07,964 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:09:08,509 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:09:08,551 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:09:09,518 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:09:09,526 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:09:10,119 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:09:10,207 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:09:11,247 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:09:11,494 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:09:11,540 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:09:11,553 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 7.336 seconds (JVM running for 7.979)
+2022-06-12 17:09:14,479 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:09:14,479 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:09:14,480 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:09:15,405 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-3] Init duration for springdoc-openapi is: 674 ms
+2022-06-12 17:09:25,755 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-12 17:09:25,957 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-12 17:11:23,079 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 17040 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:11:23,089 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:11:23,977 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:11:24,168 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 179 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:11:24,882 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:11:24,895 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:11:24,896 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:11:24,897 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:11:25,009 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:11:25,010 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1853 ms
+2022-06-12 17:11:25,263 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:11:25,325 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:11:25,465 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:11:25,597 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:11:25,957 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:11:25,986 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:11:27,031 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:11:27,038 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:11:27,475 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:11:27,555 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:11:28,559 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:11:28,755 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:11:28,870 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:11:28,892 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 6.288 seconds (JVM running for 6.686)
+2022-06-12 17:11:37,038 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:11:37,039 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:11:37,040 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:11:38,096 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-4] Init duration for springdoc-openapi is: 771 ms
+2022-06-12 17:11:46,270 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start addClient
+2022-06-12 17:12:07,832 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start addClient
+2022-06-12 17:12:15,007 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 17:12:15,011 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 17:12:17,669 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 17:12:17,674 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 17:12:18,216 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-12 17:12:18,221 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-12 17:12:30,875 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start addClient
+2022-06-12 17:12:31,160 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start addClient
+2022-06-12 17:12:31,340 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start addClient
+2022-06-12 17:12:31,511 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start addClient
+2022-06-12 17:12:31,655 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start addClient
+2022-06-12 17:13:20,241 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start addClient
+2022-06-12 17:13:37,811 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start addClient
+2022-06-12 17:13:52,558 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 18308 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:13:52,563 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:13:53,538 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:13:53,775 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 225 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:13:54,716 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:13:54,725 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:13:54,726 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:13:54,726 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:13:54,867 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:13:54,871 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2236 ms
+2022-06-12 17:13:55,191 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:13:55,273 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:13:55,430 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:13:55,604 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:13:55,931 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:13:55,959 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:13:56,828 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:13:56,836 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:13:57,299 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:13:57,379 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:13:58,433 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:13:58,670 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:13:58,697 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:13:58,707 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 6.637 seconds (JVM running for 7.066)
+2022-06-12 17:14:02,173 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:14:02,173 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:14:02,175 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2022-06-12 17:14:02,276 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start addClient
+2022-06-12 17:14:12,616 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 17:14:12,622 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 17:15:21,215 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 3468 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:15:21,221 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:15:22,196 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:15:22,381 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 167 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:15:23,166 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:15:23,176 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:15:23,177 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:15:23,177 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:15:23,288 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:15:23,288 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1987 ms
+2022-06-12 17:15:23,540 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:15:23,598 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:15:23,742 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:15:23,866 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:15:24,224 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:15:24,254 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:15:25,107 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:15:25,119 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:15:25,555 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:15:25,632 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:15:26,517 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:15:26,742 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:15:26,785 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:15:26,795 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 6.098 seconds (JVM running for 6.518)
+2022-06-12 17:15:36,150 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:15:36,150 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:15:36,152 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-06-12 17:15:36,260 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start addClient
+2022-06-12 17:15:36,465 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] end addClient
+2022-06-12 17:15:56,898 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start addClient
+2022-06-12 17:15:56,929 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] end addClient
+2022-06-12 17:16:01,077 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-12 17:16:01,082 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-12 17:16:26,564 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-12 17:16:26,575 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-12 17:17:09,143 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.tfg.myGamesList.controller.GameController.getAchievementList(GameController.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-12 17:17:30,154 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.tfg.myGamesList.controller.GameController.getAchievementList(GameController.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-12 17:17:36,083 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.tfg.myGamesList.controller.GameController.getAchievementList(GameController.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-12 17:17:46,581 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] start getAchievements
+2022-06-12 17:17:46,587 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] finish getAchievements
+2022-06-12 17:25:58,621 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 11364 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:25:58,625 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:25:59,496 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:25:59,666 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 160 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:26:00,370 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:26:00,388 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:26:00,389 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:26:00,389 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:26:00,500 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:26:00,500 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1799 ms
+2022-06-12 17:26:00,731 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:26:00,790 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:26:00,930 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:26:01,051 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:26:01,397 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:26:01,425 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:26:02,239 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:26:02,249 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:26:02,671 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:26:02,753 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:26:03,815 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:26:04,009 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:26:04,054 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:26:04,064 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 5.913 seconds (JVM running for 6.322)
+2022-06-12 17:26:22,108 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:26:22,109 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:26:22,110 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:26:32,555 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] start getAchievements
+2022-06-12 17:26:32,693 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] finish getAchievements
+2022-06-12 17:26:33,297 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-1] start getAchievements
+2022-06-12 17:26:33,300 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-1] finish getAchievements
+2022-06-12 17:26:33,680 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] start getAchievements
+2022-06-12 17:26:33,685 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] finish getAchievements
+2022-06-12 17:26:43,215 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] start getAchievements
+2022-06-12 17:26:43,220 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] finish getAchievements
+2022-06-12 17:26:55,267 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.tfg.myGamesList.controller.GameController.getAchievementList(GameController.java:115)
+	at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-12 17:26:57,902 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.tfg.myGamesList.controller.GameController.getAchievementList(GameController.java:115)
+	at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-12 17:30:53,206 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 19280 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:30:53,211 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:30:54,088 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:30:54,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 165 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:30:54,965 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:30:54,975 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:30:54,976 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:30:54,976 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:30:55,089 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:30:55,089 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1801 ms
+2022-06-12 17:30:55,308 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:30:55,366 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:30:55,536 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:30:55,651 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:30:55,987 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:30:56,016 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:30:56,364 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: com.tfg.myGamesList.model.Achievement.achievement in com.tfg.myGamesList.model.Game.achievements
+2022-06-12 17:30:56,364 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.tfg.myGamesList.model.Achievement.achievement in com.tfg.myGamesList.model.Game.achievements
+2022-06-12 17:30:56,365 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-06-12 17:30:56,379 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2022-06-12 17:30:56,382 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-06-12 17:30:56,393 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-12 17:30:56,412 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.tfg.myGamesList.model.Achievement.achievement in com.tfg.myGamesList.model.Game.achievements
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1153)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.tfg.myGamesList.MyGamesListApplication.main(MyGamesListApplication.java:13)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.tfg.myGamesList.model.Achievement.achievement in com.tfg.myGamesList.model.Game.achievements
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:848)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 17 common frames omitted
+2022-06-12 17:31:35,541 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 4292 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:31:35,546 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:31:36,418 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:31:36,616 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 186 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:31:37,301 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:31:37,315 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:31:37,324 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:31:37,325 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:31:37,440 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:31:37,441 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1830 ms
+2022-06-12 17:31:37,674 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:31:37,730 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:31:37,882 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:31:38,034 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:31:38,414 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:31:38,444 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:31:39,323 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:31:39,332 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:31:39,794 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:31:39,872 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:31:40,840 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:31:41,037 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:31:41,124 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:31:41,141 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 6.084 seconds (JVM running for 6.549)
+2022-06-12 17:31:46,436 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:31:46,436 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:31:46,437 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:31:56,387 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 722 ms
+2022-06-12 17:33:10,495 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 6428 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:33:10,500 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:33:11,435 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:33:11,623 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 175 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:33:12,380 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:33:12,394 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:33:12,395 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:33:12,396 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:33:12,627 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:33:12,627 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2050 ms
+2022-06-12 17:33:12,937 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:33:12,995 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:33:13,147 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:33:13,284 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:33:13,798 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:33:13,830 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:33:15,443 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:33:15,452 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:33:16,079 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:33:16,160 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:33:17,564 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:33:17,943 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:33:18,038 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:33:18,062 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 8.033 seconds (JVM running for 8.441)
+2022-06-12 17:33:21,164 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:33:21,165 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:33:21,166 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:33:30,327 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] start getAchievements
+2022-06-12 17:33:30,453 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] finish getAchievements
+2022-06-12 17:34:10,362 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 18420 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 17:34:10,366 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 17:34:11,253 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 17:34:11,434 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 170 ms. Found 3 JPA repository interfaces.
+2022-06-12 17:34:12,097 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 17:34:12,109 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:34:12,110 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 17:34:12,111 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 17:34:12,223 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 17:34:12,224 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1778 ms
+2022-06-12 17:34:12,456 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 17:34:12,514 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 17:34:12,663 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 17:34:12,781 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 17:34:13,130 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 17:34:13,159 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 17:34:14,263 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 17:34:14,271 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 17:34:14,702 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 17:34:14,775 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 17:34:15,621 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 17:34:15,854 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 17:34:15,896 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 17:34:15,905 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 6.019 seconds (JVM running for 6.412)
+2022-06-12 17:34:26,497 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 17:34:26,497 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 17:34:26,499 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-12 17:34:35,195 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] start getAchievements
+2022-06-12 17:34:35,204 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-2] finish getAchievements
+2022-06-12 17:48:26,328 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 17:48:26,335 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 17:49:28,920 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-4] start getAchievements
+2022-06-12 17:49:28,925 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-4] finish getAchievements
+2022-06-12 17:53:05,404 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 17:53:05,409 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 17:53:09,440 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 17:53:09,444 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 17:53:10,812 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGame
+2022-06-12 17:53:10,823 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] fin getGame
+2022-06-12 17:53:17,995 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-12 17:53:18,001 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-12 17:53:36,765 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-12 17:53:36,770 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-12 17:54:04,909 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-12 17:54:04,914 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-12 17:54:05,905 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 17:54:05,909 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 17:54:32,538 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-12 17:54:32,542 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-12 17:54:38,926 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 17:54:38,931 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 17:54:40,668 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 17:54:40,673 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 17:55:04,819 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 17:55:04,822 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 17:55:09,062 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 17:55:09,066 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 17:55:12,467 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGame
+2022-06-12 17:55:12,474 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] fin getGame
+2022-06-12 17:55:53,390 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGame
+2022-06-12 17:55:53,393 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] fin getGame
+2022-06-12 17:56:47,313 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] start getAchievements
+2022-06-12 17:56:47,320 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-10] finish getAchievements
+2022-06-12 17:58:27,783 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-6] start getAchievements
+2022-06-12 17:58:27,788 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-6] finish getAchievements
+2022-06-12 17:59:21,712 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-9] start getAchievements
+2022-06-12 17:59:21,717 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-9] finish getAchievements
+2022-06-12 17:59:27,552 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGame
+2022-06-12 17:59:27,558 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] fin getGame
+2022-06-12 17:59:39,857 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 17:59:39,862 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:00:51,002 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-6] start getAchievements
+2022-06-12 18:00:51,010 INFO com.tfg.myGamesList.controller.AchievementController [http-nio-8080-exec-6] finish getAchievements
+2022-06-12 18:02:16,183 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGame
+2022-06-12 18:02:16,187 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] fin getGame
+2022-06-12 18:03:46,746 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGame
+2022-06-12 18:03:46,752 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] fin getGame
+2022-06-12 18:03:56,302 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 18:03:56,306 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:07:09,670 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGame
+2022-06-12 18:07:09,674 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] fin getGame
+2022-06-12 18:09:05,031 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGame
+2022-06-12 18:09:05,037 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] fin getGame
+2022-06-12 18:09:41,031 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGame
+2022-06-12 18:09:41,036 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] fin getGame
+2022-06-12 18:11:03,687 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 18:11:03,692 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:11:19,833 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGame
+2022-06-12 18:11:19,837 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] fin getGame
+2022-06-12 18:12:49,394 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 18:12:49,398 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:13:21,210 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGame
+2022-06-12 18:13:21,214 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] fin getGame
+2022-06-12 18:13:48,216 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGame
+2022-06-12 18:13:48,219 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] fin getGame
+2022-06-12 18:14:13,878 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGame
+2022-06-12 18:14:13,882 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] fin getGame
+2022-06-12 18:14:17,707 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGame
+2022-06-12 18:14:17,711 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] fin getGame
+2022-06-12 18:14:51,000 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGame
+2022-06-12 18:14:51,003 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] fin getGame
+2022-06-12 18:16:07,850 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGame
+2022-06-12 18:16:07,854 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] fin getGame
+2022-06-12 18:20:18,296 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGame
+2022-06-12 18:20:18,301 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] fin getGame
+2022-06-12 18:20:27,722 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGame
+2022-06-12 18:20:27,727 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] fin getGame
+2022-06-12 18:20:37,564 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGame
+2022-06-12 18:20:37,568 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] fin getGame
+2022-06-12 18:21:49,135 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGame
+2022-06-12 18:21:49,139 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] fin getGame
+2022-06-12 18:21:58,980 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGame
+2022-06-12 18:21:58,987 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] fin getGame
+2022-06-12 18:23:11,982 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGame
+2022-06-12 18:23:11,986 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] fin getGame
+2022-06-12 18:23:17,278 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 18:23:17,283 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:24:17,264 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGame
+2022-06-12 18:24:17,268 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] fin getGame
+2022-06-12 18:24:46,087 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGame
+2022-06-12 18:24:46,091 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] fin getGame
+2022-06-12 18:24:50,118 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGame
+2022-06-12 18:24:50,123 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] fin getGame
+2022-06-12 18:26:30,226 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGame
+2022-06-12 18:26:30,230 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] fin getGame
+2022-06-12 18:27:03,893 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 18:27:03,904 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 18:27:03,920 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start modifyClient
+2022-06-12 18:27:03,937 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] end modifyClient
+2022-06-12 18:27:03,964 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 18:27:03,969 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 18:27:33,707 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 18:27:33,711 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 18:27:48,720 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 18:27:48,722 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 18:30:11,916 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 18:30:11,919 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 18:30:13,662 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 18:30:13,666 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 18:30:28,871 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 18:30:28,875 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 18:32:25,737 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-12 18:32:25,740 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-12 18:33:18,755 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 18:33:18,758 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 18:33:42,743 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 18:33:42,748 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 18:34:53,398 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-12 18:34:53,402 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-12 18:35:17,298 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-12 18:35:17,303 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-12 18:35:28,844 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 18:35:28,848 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 18:36:34,748 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 18:36:34,752 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 18:36:44,568 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-12 18:36:44,573 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-12 18:39:43,949 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 18:39:43,953 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 18:39:45,188 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 18:39:45,191 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 18:40:04,553 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 18:40:04,557 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 18:40:10,716 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGame
+2022-06-12 18:40:10,719 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] fin getGame
+2022-06-12 18:40:12,352 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 18:40:12,355 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 18:45:22,168 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGame
+2022-06-12 18:45:22,174 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] fin getGame
+2022-06-12 18:45:25,732 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 18:45:25,736 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 18:45:46,946 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGame
+2022-06-12 18:45:46,957 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] fin getGame
+2022-06-12 18:46:27,104 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGame
+2022-06-12 18:46:27,107 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] fin getGame
+2022-06-12 18:46:36,895 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGame
+2022-06-12 18:46:36,898 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] fin getGame
+2022-06-12 18:46:43,218 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGame
+2022-06-12 18:46:43,222 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] fin getGame
+2022-06-12 18:47:18,038 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 18:47:18,041 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 18:47:25,326 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-12 18:47:25,328 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-12 18:48:55,465 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 18:48:55,468 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 18:49:20,622 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 18:49:20,625 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 18:49:41,884 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 18:49:41,888 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 18:50:31,938 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 18:50:31,942 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 18:51:44,601 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-12 18:51:44,604 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-12 18:52:39,366 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-12 18:52:39,370 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-12 18:52:56,505 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 18:52:56,510 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 18:53:08,583 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-12 18:53:08,585 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-12 18:53:29,882 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 18:53:29,885 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 18:54:12,513 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 18:54:12,516 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 18:54:23,442 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 18:54:23,446 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 18:55:08,780 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 18:55:08,784 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 18:55:31,091 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 18:55:31,095 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 18:55:35,343 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 18:55:35,347 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 18:55:48,412 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 18:55:48,417 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 18:57:54,853 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-12 18:57:54,856 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-12 18:59:15,605 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 18:59:15,608 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 18:59:23,213 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 18:59:23,216 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 18:59:54,857 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 18:59:54,860 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 18:59:56,143 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 18:59:56,147 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 19:00:01,716 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGame
+2022-06-12 19:00:01,719 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] fin getGame
+2022-06-12 19:00:03,245 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-12 19:00:03,248 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-12 19:00:14,786 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-12 19:00:14,789 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-12 19:00:19,329 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-12 19:00:19,332 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-12 19:00:28,995 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-12 19:00:28,998 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-12 19:00:30,780 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-12 19:00:30,783 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-12 19:02:41,791 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:02:41,795 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:04:06,187 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 19:04:06,192 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 19:04:11,802 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 19:04:11,806 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 19:04:50,552 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 19:04:50,556 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 19:04:51,918 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-12 19:04:51,921 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-12 19:05:16,971 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-12 19:05:16,975 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-12 19:05:26,778 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 19:05:26,782 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 19:05:26,784 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-12 19:05:26,790 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-12 19:05:31,458 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:05:31,461 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 19:05:31,461 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:05:31,464 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 19:05:37,596 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 19:05:37,597 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-12 19:05:37,603 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 19:05:37,603 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-12 19:09:11,109 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-12 19:09:11,113 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-12 19:09:11,118 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 19:09:11,121 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 19:09:48,174 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-12 19:09:48,174 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 19:09:48,177 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-12 19:09:48,177 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 19:10:04,208 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:10:04,210 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:10:04,211 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-12 19:10:04,214 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-12 19:15:38,277 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-12 19:15:38,280 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-12 19:15:38,281 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-12 19:15:38,282 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-12 19:17:13,171 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 19740 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 19:17:13,175 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 19:17:14,041 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 19:17:14,221 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 168 ms. Found 3 JPA repository interfaces.
+2022-06-12 19:17:14,900 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 19:17:14,921 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 19:17:14,922 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 19:17:14,922 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 19:17:15,039 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 19:17:15,040 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1798 ms
+2022-06-12 19:17:15,259 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 19:17:15,313 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 19:17:15,452 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 19:17:15,572 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 19:17:15,978 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 19:17:16,010 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 19:17:16,841 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 19:17:16,848 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 19:17:17,245 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 19:17:17,318 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 19:17:18,253 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 19:17:18,450 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 19:17:18,511 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 19:17:18,539 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 5.85 seconds (JVM running for 6.275)
+2022-06-12 19:25:43,479 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 19:25:43,481 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-12 19:25:43,485 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2022-06-12 19:25:43,562 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:25:43,607 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 19:25:43,766 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:25:43,766 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 19:25:51,357 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 19:25:51,362 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 19:25:51,376 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 19:25:51,380 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 19:26:06,902 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 19:26:06,907 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 19:26:06,915 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 19:26:06,920 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 19:26:35,958 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-12 19:26:35,963 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-12 19:26:35,967 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-12 19:26:35,971 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-12 19:27:43,338 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:27:43,344 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:27:43,354 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 19:27:43,361 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 19:27:56,713 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-12 19:27:56,719 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-12 19:27:56,725 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-12 19:27:56,729 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-12 19:27:58,290 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 19:27:58,291 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 19:27:58,294 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 19:27:58,295 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 19:29:09,346 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:29:09,353 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:29:09,359 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-12 19:29:09,365 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-12 19:30:22,888 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 19652 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-12 19:30:22,893 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-12 19:30:23,923 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-12 19:30:24,156 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 222 ms. Found 3 JPA repository interfaces.
+2022-06-12 19:30:25,196 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-12 19:30:25,224 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-12 19:30:25,225 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-12 19:30:25,226 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-12 19:30:25,430 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-12 19:30:25,431 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2462 ms
+2022-06-12 19:30:25,857 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-12 19:30:25,927 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-12 19:30:26,087 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-12 19:30:26,209 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-12 19:30:26,585 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-12 19:30:26,617 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-12 19:30:27,552 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-12 19:30:27,562 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-12 19:30:28,105 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-12 19:30:28,199 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 19:30:29,094 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-12 19:30:29,283 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-12 19:30:29,319 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-12 19:30:29,328 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 7.045 seconds (JVM running for 7.51)
+2022-06-12 19:30:39,021 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 19:30:39,021 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-06-12 19:30:39,022 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-06-12 19:30:39,057 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-12 19:30:39,074 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-12 19:30:39,241 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-12 19:30:39,243 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-12 19:31:53,829 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-12 19:31:53,829 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-12 19:31:53,833 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-12 19:31:53,837 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-12 19:32:08,447 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] ADDING GAME TO LIST
+2022-06-12 19:32:08,499 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] ENDING ADDING GAME TO LIST
+2022-06-12 19:32:50,452 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] ADDING GAME TO LIST
+2022-06-12 19:32:50,465 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] ENDING ADDING GAME TO LIST
+2022-06-12 19:39:09,621 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-12 19:39:09,627 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-12 19:39:09,637 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-12 19:39:09,642 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients

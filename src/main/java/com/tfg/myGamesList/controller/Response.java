@@ -37,4 +37,8 @@ public class Response {
     public static Response errorResonse(int errorCode, String errorMessage) {
         return new Response(new Error(errorCode, errorMessage));
     }
+    
+        public static Response errorResonse(int errorCode, String errorMessage, String moreInfo) {
+        return new Response(new Error(errorCode, errorMessage+" "+ moreInfo));
+    }
 }

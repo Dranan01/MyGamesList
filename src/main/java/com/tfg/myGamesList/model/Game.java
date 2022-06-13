@@ -5,6 +5,7 @@
 package com.tfg.myGamesList.model;
 
 import com.tfg.myGamesList.model.domain.GameResume;
+import com.tfg.myGamesList.model.domain.GameResumeNoId;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 /**
  *
  * @author Francisco Miguel Pérez
@@ -30,12 +30,12 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity(name = "game")
 public class Game implements Serializable {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gameId;
-    
-    @Column
+
+    @Column(unique = true)
     private String name;
     @Column
     private String description;
@@ -49,34 +49,36 @@ public class Game implements Serializable {
     private int releaseYear;
     @Column
     private double gameScore;
-    
-    
-     @ManyToMany(cascade = CascadeType.DETACH, mappedBy = "games")
+
+    @ManyToMany(cascade = CascadeType.DETACH, mappedBy = "games")
     private List<Client> clients;
-    
-    
-    @OneToMany(mappedBy = "achievementId", cascade = CascadeType.ALL)
+
+    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL)
     private List<Achievement> achievements;
 
     public Game(GameResume gr) {
-        this.gameId = gr.getGameId();
         this.name = gr.getName();
         this.description = gr.getDescription();
         this.genre = gr.getGenre();
         this.designer = gr.getDesigner();
         this.coverPage = gr.getCoverPage();
         this.releaseYear = gr.getReleaseYear();
-        this.gameScore = 0.0;
+        this.gameScore = gr.getGameScore();
+    }
+
+    public Game(GameResumeNoId gr) {
+        this.name = gr.getName();
+        this.description = gr.getDescription();
+        this.genre = gr.getGenre();
+        this.designer = gr.getDesigner();
+        this.coverPage = gr.getCoverPage();
+        this.releaseYear = gr.getReleaseYear();
+        this.gameScore = gr.getGameScore();
     }
 
     @Override
     public String toString() {
         return "Game{" + "gameId=" + gameId + ", name=" + name + ", description=" + description + ", genre=" + genre + ", designer=" + designer + ", coverPage=" + coverPage + ", releaseYear=" + releaseYear + ", gameScore=" + gameScore + ", clients=" + clients + ", achievements=" + achievements + '}';
     }
-    
-    
-    
-    
-    
-    
+
 }

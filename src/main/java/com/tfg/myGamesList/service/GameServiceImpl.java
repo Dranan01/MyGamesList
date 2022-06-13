@@ -18,18 +18,18 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class GameServiceImpl implements GameService {
+
     @Autowired
     private GameRepository repository;
 
-
     @Override
     public Set<Game> findAll() {
-        return  repository.findAll();
+        return repository.findAll();
     }
 
     @Override
     public Optional<Game> findById(Long id) {
-       return repository.findById(id);
+        return repository.findById(id);
     }
 
     @Override
@@ -47,5 +47,19 @@ public class GameServiceImpl implements GameService {
         Game g = repository.findById(id).get();
         repository.delete(g);
     }
-    
+
+    @Override
+    public Optional<Game> findByName(String name) {
+
+        Set<Game> games = repository.findAll();
+        for (Game g : games) {
+            if (g.getName().toLowerCase().equals(name.toLowerCase())) {
+
+                return Optional.of(g);
+            }
+        }
+        Game vacio = new Game();
+
+        return Optional.of(vacio);
+    }
 }

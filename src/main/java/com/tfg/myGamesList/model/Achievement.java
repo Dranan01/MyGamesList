@@ -5,6 +5,7 @@
 package com.tfg.myGamesList.model;
 
 import com.tfg.myGamesList.model.domain.AchievementResume;
+import com.tfg.myGamesList.model.domain.AchievementResumeNoId;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +18,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 /**
  *
  * @author Francisco Miguel Pérez
@@ -26,27 +26,29 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 
-@Entity(name="achievement")
+@Entity(name = "achievement")
 public class Achievement implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long achievementId;
-    
+
+    @Column
+    private String achName;
+
     @Column
     private String achDescription;
-    
+
     @Column
     private String achImage;
-    
+
     @Column
     private boolean isDone;
-    
+
     @Column
     private String difficulty;
-    
-    
+
     @ManyToOne
-    @JoinColumn(name= "gameId")
     private Game game;
 
     public Achievement(AchievementResume ar) {
@@ -56,8 +58,14 @@ public class Achievement implements Serializable {
         this.isDone = ar.isDone();
         this.difficulty = ar.getDifficulty();
     }
-    
-    
-    
-    
+
+    public Achievement(AchievementResumeNoId ar) {
+        
+        this.achName = ar.getAchName();
+        this.achDescription = ar.getAchDescription();
+        this.achImage = ar.getAchImage();
+        this.isDone = ar.isDone();
+        this.difficulty = ar.getDifficulty();
+    }
+
 }

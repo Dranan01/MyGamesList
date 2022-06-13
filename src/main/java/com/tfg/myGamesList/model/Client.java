@@ -38,7 +38,7 @@ public class Client implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long clientId;
     
-    @Column
+    @Column(unique = true)
     private String username;
     
     @Column(name="_password") //Lo cambio porque password es una palabra reservada de MYSQL
@@ -68,6 +68,8 @@ public class Client implements Serializable {
         public Client(ClientResumeNoId cr) {
         this.username = cr.getUsername();
         this.password = cr.getPassword();
+        this.logged = cr.isLogged();
+        this.profilePic = cr.getProfilePic();
     }
     
     

@@ -8,6 +8,7 @@ import com.tfg.myGamesList.exception.AchievementNotFoundException;
 import com.tfg.myGamesList.model.Achievement;
 import com.tfg.myGamesList.model.Game;
 import com.tfg.myGamesList.model.domain.AchievementResume;
+import com.tfg.myGamesList.model.domain.AchievementResumeNoId;
 import com.tfg.myGamesList.model.domain.GameResume;
 import com.tfg.myGamesList.service.AchievementServiceImpl;
 import com.tfg.myGamesList.service.GameServiceImpl;
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -74,31 +76,52 @@ public class AchievementController {
                 .orElseThrow(() -> new AchievementNotFoundException(id));
         AchievementResume resume = new AchievementResume(achievement);
 
-        return new ResponseEntity<>(resume, HttpStatus.OK);
+        return new ResponseEntity<>(resume, HttpStatus.ACCEPTED);
     }
 
     @Operation(summary = "Creates a new achievement")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Saves a new achievement ", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResume.class)))),})
+        @ApiResponse(responseCode = "200", description = "Saves a new achievement ", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResumeNoId.class)))),})
     @PostMapping("/achievement/game/{gameId}")
-    public ResponseEntity<AchievementResume> addGame(@RequestBody AchievementResume ar, @PathVariable long gameId) {
+    public ResponseEntity<AchievementResumeNoId> addGame(@RequestBody AchievementResumeNoId ar, @PathVariable long gameId) {
         Achievement achievement = new Achievement(ar);
         Game game = gameImpl.findById(gameId).get();
         achievement.setGame(game);
         achievementImpl.addAchievement(achievement);
-        return new ResponseEntity<>(ar, HttpStatus.OK);
+        return new ResponseEntity<>(ar, HttpStatus.ACCEPTED);
+        
+        /*Achievement achievement = new Achievement(ar);
+        Game game = gameImpl.findById(gameId).get();
+        achievement.setGame(game);
+        achievementImpl.addAchievement(achievement);*/
     }
 
     @Operation(summary = "Delete an achievement by his id")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "Deletes an achievement", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResume.class)))),})
     @DeleteMapping("/achievement/{id}")
-    public ResponseEntity<AchievementResume> deleteClient(@PathVariable long id) {
+    public ResponseEntity<AchievementResume> deleteAchievement(@PathVariable long id) {
         Achievement a = achievementImpl.findById(id).get();
         AchievementResume ar = new AchievementResume(a);
         achievementImpl.deleteAchievement(id);
         return new ResponseEntity<>(ar, HttpStatus.GONE);
     }
+    
+    
+        @Operation(summary = "Delete an achievement by his id")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "modifies an achievement", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResume.class)))),})
+    @PutMapping("/achievement/{id}")
+    public ResponseEntity<AchievementResumeNoId> modifyAchievement(@PathVariable long id, @RequestBody AchievementResumeNoId ar) {
+        Achievement ach = achievementImpl.findById(id).get();
+        Achievement modified = new Achievement(ar);
+        modified.setAchievementId(id);
+        modified.setGame(ach.getGame());
+        achievementImpl.addAchievement(modified);
+        return new ResponseEntity<>(ar, HttpStatus.GONE);
+    }
+    
+    
     
         @Operation(summary = "Gives the game of this achievement")
     @ApiResponses(value = {

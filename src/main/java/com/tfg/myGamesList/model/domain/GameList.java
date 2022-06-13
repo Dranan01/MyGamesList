@@ -21,12 +21,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GameList {
 
-    private String clientName;
     private List<GameResume> game;
 
     public GameList(Client client) {
         game = new ArrayList();
-        this.clientName = client.getUsername();
         List<Game> gameRes = client.getGames();
         for (Game games : gameRes) {
             System.out.println(game.toString());
