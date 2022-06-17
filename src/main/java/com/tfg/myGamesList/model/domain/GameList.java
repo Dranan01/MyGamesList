@@ -27,7 +27,6 @@ public class GameList {
         game = new ArrayList();
         List<Game> gameRes = client.getGames();
         for (Game games : gameRes) {
-            System.out.println(game.toString());
             GameResume gameResume = new GameResume(games);
             this.game.add(gameResume);
 

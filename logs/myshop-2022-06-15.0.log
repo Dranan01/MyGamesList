@@ -1,0 +1,287 @@
+2022-06-15 18:01:46,690 INFO org.springframework.boot.StartupInfoLogger [main] Starting MyGamesListApplication using Java 17.0.2 on DESKTOP-AI0ENAG with PID 10412 (C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI\target\classes started by franm in C:\Users\franm\OneDrive\Escritorio\PROYECTO FINAL\proyecto\myGamesListAPI)
+2022-06-15 18:01:46,704 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-06-15 18:01:48,508 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-15 18:01:48,837 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 312 ms. Found 3 JPA repository interfaces.
+2022-06-15 18:01:50,466 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-15 18:01:50,481 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-15 18:01:50,482 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-15 18:01:50,483 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-15 18:01:50,707 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-15 18:01:50,708 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3843 ms
+2022-06-15 18:01:51,471 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-15 18:01:51,570 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2022-06-15 18:01:51,775 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-15 18:01:51,953 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-15 18:01:52,579 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-15 18:01:52,610 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-15 18:01:53,819 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-15 18:01:53,830 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-15 18:01:54,472 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-15 18:01:54,676 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-15 18:01:56,076 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-06-15 18:01:56,546 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-15 18:01:56,592 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-15 18:01:56,607 INFO org.springframework.boot.StartupInfoLogger [main] Started MyGamesListApplication in 10.821 seconds (JVM running for 11.571)
+2022-06-15 18:02:46,113 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 18:02:46,114 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-06-15 18:02:46,115 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-06-15 18:02:46,162 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:02:46,327 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:02:47,727 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-15 18:02:47,730 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:02:47,739 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-15 18:02:47,740 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:05:11,225 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:05:11,234 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:05:11,233 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:05:11,247 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:19:53,685 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:19:53,685 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:19:53,691 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:19:53,691 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:20:06,053 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:20:06,059 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:20:06,061 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-15 18:20:06,067 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-15 18:27:37,413 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:27:37,420 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:27:40,066 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:27:40,070 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:31:55,739 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-15 18:31:55,744 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-15 18:32:02,988 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:32:02,992 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:32:32,402 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:32:32,405 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:32:32,407 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:32:32,410 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:32:53,740 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-15 18:32:53,740 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:32:53,744 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:32:53,744 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-15 18:33:45,182 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:33:45,185 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:33:45,186 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:33:45,189 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:34:30,127 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-15 18:34:30,130 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-15 18:34:30,134 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:34:30,138 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:34:43,786 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-15 18:34:43,791 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-15 18:34:43,793 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:34:43,796 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:34:54,698 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:34:54,701 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:34:54,702 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:34:54,704 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:35:13,915 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-15 18:35:13,918 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:35:13,919 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-15 18:35:13,923 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:35:40,396 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:35:40,399 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:35:40,400 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:35:40,403 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:36:04,811 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-15 18:36:04,815 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-15 18:36:04,822 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:36:04,826 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:36:21,600 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-15 18:36:21,600 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:36:21,604 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-15 18:36:21,604 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:36:33,945 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:36:33,950 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:36:33,950 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:36:33,955 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:37:12,781 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] start getGames
+2022-06-15 18:37:12,781 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:37:12,784 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:37:12,784 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-3] finish getGames
+2022-06-15 18:37:33,616 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:37:33,615 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:37:33,619 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:37:33,621 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:37:48,267 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-15 18:37:48,272 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-15 18:37:48,273 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:37:48,276 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:38:45,419 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:38:45,421 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-15 18:38:45,423 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:38:45,426 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-15 18:38:58,085 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:38:58,086 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:38:58,091 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:38:58,091 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:39:25,898 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-15 18:39:25,903 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-15 18:39:25,912 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-15 18:39:25,916 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-15 18:39:33,620 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:39:33,623 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:39:33,628 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:39:33,632 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:39:49,326 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-15 18:39:49,331 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-15 18:39:49,330 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:39:49,338 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:43:14,130 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:43:14,134 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:43:14,142 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:43:14,145 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:43:27,907 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-15 18:43:27,911 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-15 18:43:27,915 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-15 18:43:27,919 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-15 18:43:32,838 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:43:32,838 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:43:32,841 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:43:32,841 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:43:34,289 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:43:34,292 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:43:36,099 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:43:36,106 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:43:36,099 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-15 18:43:36,111 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-15 18:43:37,574 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start modifyClient
+2022-06-15 18:43:37,613 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] end modifyClient
+2022-06-15 18:44:41,019 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:44:41,024 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:44:43,773 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-15 18:44:43,776 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-15 18:45:04,428 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] start getGames
+2022-06-15 18:45:04,428 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:45:04,431 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:45:04,431 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-8] finish getGames
+2022-06-15 18:45:06,414 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:45:06,418 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:45:07,591 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:45:07,595 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:45:07,593 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:45:07,600 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:47:31,991 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:47:31,995 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:47:32,004 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-15 18:47:32,015 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-15 18:47:44,970 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGames
+2022-06-15 18:47:44,974 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] finish getGames
+2022-06-15 18:47:44,982 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:47:44,985 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:47:56,776 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:47:56,780 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:47:56,783 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-15 18:47:56,786 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-15 18:48:06,988 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:48:06,992 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:48:06,993 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:48:06,995 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:49:04,009 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] start getGames
+2022-06-15 18:49:04,012 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-6] finish getGames
+2022-06-15 18:49:04,081 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-15 18:49:04,085 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-15 18:49:33,709 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:49:33,710 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-15 18:49:33,712 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:49:33,713 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-15 18:49:47,656 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] start getGames
+2022-06-15 18:49:47,658 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:49:47,660 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-10] finish getGames
+2022-06-15 18:49:47,661 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:49:55,389 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:49:55,389 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start getClients
+2022-06-15 18:49:55,393 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] fin GetClients
+2022-06-15 18:49:55,393 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:50:04,559 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:50:04,562 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:50:04,571 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:50:04,574 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:50:10,019 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start modifyClient
+2022-06-15 18:50:10,024 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] end modifyClient
+2022-06-15 18:50:29,492 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start getClients
+2022-06-15 18:50:29,495 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] fin GetClients
+2022-06-15 18:50:30,997 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] start getGames
+2022-06-15 18:50:30,997 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:50:31,002 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-5] finish getGames
+2022-06-15 18:50:31,002 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:50:32,214 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start getClients
+2022-06-15 18:50:32,218 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] fin GetClients
+2022-06-15 18:50:32,913 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:50:32,917 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:50:32,925 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:50:32,931 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:51:08,210 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:51:08,213 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:51:08,216 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:51:08,219 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:51:11,647 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start modifyClient
+2022-06-15 18:51:11,652 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] end modifyClient
+2022-06-15 18:51:34,402 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:51:34,406 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:51:34,409 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start getClients
+2022-06-15 18:51:34,412 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] fin GetClients
+2022-06-15 18:52:57,799 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-15 18:52:57,802 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-15 18:53:00,858 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:53:00,862 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:53:56,615 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] start getGames
+2022-06-15 18:53:56,621 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-4] finish getGames
+2022-06-15 18:53:56,623 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start getClients
+2022-06-15 18:53:56,626 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] fin GetClients
+2022-06-15 18:53:59,035 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:53:59,040 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:54:00,893 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:54:00,896 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:54:00,899 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start getClients
+2022-06-15 18:54:00,902 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] fin GetClients
+2022-06-15 18:54:02,242 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start modifyClient
+2022-06-15 18:54:02,253 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] end modifyClient
+2022-06-15 18:54:04,197 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start modifyClient
+2022-06-15 18:54:04,204 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] end modifyClient
+2022-06-15 18:54:05,136 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start modifyClient
+2022-06-15 18:54:05,141 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] end modifyClient
+2022-06-15 18:54:06,595 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start modifyClient
+2022-06-15 18:54:06,603 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] end modifyClient
+2022-06-15 18:54:53,126 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start modifyClient
+2022-06-15 18:54:53,133 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] end modifyClient
+2022-06-15 18:54:59,185 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] start getGames
+2022-06-15 18:54:59,188 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-1] finish getGames
+2022-06-15 18:54:59,188 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start getClients
+2022-06-15 18:54:59,191 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] fin GetClients
+2022-06-15 18:55:00,429 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start modifyClient
+2022-06-15 18:55:00,433 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] end modifyClient
+2022-06-15 18:55:01,001 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start modifyClient
+2022-06-15 18:55:01,005 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] end modifyClient
+2022-06-15 18:55:01,189 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] start modifyClient
+2022-06-15 18:55:01,197 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-7] end modifyClient
+2022-06-15 18:55:01,368 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start modifyClient
+2022-06-15 18:55:01,374 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] end modifyClient
+2022-06-15 18:55:01,519 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start modifyClient
+2022-06-15 18:55:01,523 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] end modifyClient
+2022-06-15 18:55:01,699 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] start modifyClient
+2022-06-15 18:55:01,703 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-9] end modifyClient
+2022-06-15 18:55:22,473 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] start getGames
+2022-06-15 18:55:22,474 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start getClients
+2022-06-15 18:55:22,476 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-2] finish getGames
+2022-06-15 18:55:22,476 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] fin GetClients
+2022-06-15 18:55:24,163 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] start modifyClient
+2022-06-15 18:55:24,168 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-1] end modifyClient
+2022-06-15 18:55:25,266 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] start modifyClient
+2022-06-15 18:55:25,270 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-6] end modifyClient
+2022-06-15 18:55:25,491 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] start modifyClient
+2022-06-15 18:55:25,494 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-3] end modifyClient
+2022-06-15 18:55:25,660 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] start modifyClient
+2022-06-15 18:55:25,663 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-10] end modifyClient
+2022-06-15 18:55:58,153 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] start getGames
+2022-06-15 18:55:58,154 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] start getClients
+2022-06-15 18:55:58,156 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-7] finish getGames
+2022-06-15 18:55:58,159 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-5] fin GetClients
+2022-06-15 18:55:59,138 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] start modifyClient
+2022-06-15 18:55:59,143 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-8] end modifyClient
+2022-06-15 18:56:13,981 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] start getGames
+2022-06-15 18:56:13,985 INFO com.tfg.myGamesList.controller.GameController [http-nio-8080-exec-9] finish getGames
+2022-06-15 18:56:13,991 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] start getClients
+2022-06-15 18:56:13,995 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-2] fin GetClients
+2022-06-15 18:56:14,973 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] start modifyClient
+2022-06-15 18:56:14,977 INFO com.tfg.myGamesList.controller.ClientController [http-nio-8080-exec-4] end modifyClient

@@ -41,6 +41,12 @@ public class Client implements Serializable {
     @Column(unique = true)
     private String username;
     
+    @Column
+    private String description;
+   
+    @Column
+    private String email;
+    
     @Column(name="_password") //Lo cambio porque password es una palabra reservada de MYSQL
     private String password;
     

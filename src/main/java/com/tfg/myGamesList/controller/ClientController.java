@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Francisco Miguel Pérez
  */
 @Tag(name = "client", description = "methods about all the clients on the database")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/")
 public class ClientController {
@@ -68,13 +68,11 @@ public class ClientController {
             resume.add(new ClientResume(c));
         }
 
-        
         logger.info("fin GetClients");
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
-    
-    
-        @Operation(summary = "Obtains a list of every client")
+
+    @Operation(summary = "Obtains a list of every client")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "List of clients", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @GetMapping("client/username/{username}")
@@ -82,8 +80,7 @@ public class ClientController {
         logger.info("start getClients");
         Client c = clientImpl.findByUsername(username).get();
         ClientResume resume = new ClientResume(c);
-        
-        
+
         logger.info("fin GetClients");
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
@@ -108,15 +105,15 @@ public class ClientController {
         logger.info("start addClient");
         Client addedClient = new Client(cr); //clientImpl.addClient(new Client(cr));
         Client temp = clientImpl.findByUsername(addedClient.getUsername()).get();
-        
+
         if (temp == null) {
             System.out.println("EN ERROR");
             getErrorResponse();
             return new ResponseEntity<>(cr, HttpStatus.CONFLICT);
         }
-        
+
         clientImpl.addClient(addedClient);
-         logger.info("end addClient");
+        logger.info("end addClient");
         return new ResponseEntity<>(cr, HttpStatus.CREATED);
     }
 
@@ -126,16 +123,18 @@ public class ClientController {
     @PutMapping("/client/{id}")
     public ResponseEntity<ClientResume> modifyClientUser(@PathVariable long id, @RequestBody ClientResume cr) {
         logger.info("start modifyClient");
-        
+
         Client c = new Client(cr);
+        
         System.out.println("ESTA LOGUEADO?" + c.isLogged());
+        System.out.println("EN MODIDFY CLIENT:" + cr.getDescription());
         clientImpl.modifyClient(id, c);
         logger.info("end modifyClient");
         return new ResponseEntity<>(cr, HttpStatus.ACCEPTED);
 
     }
 
-        @Operation(summary = "delete a client by his id")
+    @Operation(summary = "delete a client by his id")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "delete a client", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientResume.class)))),})
     @DeleteMapping("/client/{id}")
@@ -161,19 +160,29 @@ public class ClientController {
         @ApiResponse(responseCode = "200", description = "add a new game to the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
     @GetMapping("/client/{clientId}/game/{gameId}")
     public ResponseEntity<GameList> addGameToList(@PathVariable long gameId, @PathVariable long clientId) {
+        boolean found = false;
         logger.info("ADDING GAME TO LIST");
-        
+
         Client client = clientImpl.findById(clientId).get();
         Game game = gameImpl.findById(gameId).get();
 
-        client.getGames().add(game);
-        clientImpl.addClient(client);
+        
+        for (Game games : client.getGames()) {
+            if (!games.getGameId().equals(game.getGameId())) {
+                found = true;
+            }
+        }
+        
+        if (client.getGames().isEmpty() || !found) {
+            client.getGames().add(game);
+            clientImpl.addClient(client);
+        }
         GameList gl = new GameList(client);
         logger.info("ENDING ADDING GAME TO LIST");
         return new ResponseEntity<>(gl, HttpStatus.ACCEPTED);
     }
-    
-        @Operation(summary = "deletes a game from the gametList of the client ")
+
+    @Operation(summary = "deletes a game from the gametList of the client ")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "deletes a game from the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
     @DeleteMapping("/client/{id}/GameList/game/{gameId}")
@@ -183,11 +192,10 @@ public class ClientController {
 
         client.getGames().remove(game);
         clientImpl.addClient(client);
-   
+
     }
-    
-        public ResponseEntity<Response> getErrorResponse(){
+    public ResponseEntity<Response> getErrorResponse() {
         return new ResponseEntity<>(Response.errorResonse(500, "That username alreadyExists"), HttpStatus.CONFLICT);
     }
-    
+
 }

@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Francisco Miguel Pérez
  */
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "game", description = "methods about all the games on the database")
 @RestController
 public class GameController {
@@ -58,7 +58,7 @@ public class GameController {
         Set<Game> games = gameImpl.findAll();
         Set<GameResume> resume = new HashSet<>();
         for (Game g : games) {
-            
+
             resume.add(new GameResume(g));
         }
         logger.info("finish getGames");
@@ -77,6 +77,28 @@ public class GameController {
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
 
+    @Operation(summary = "Obtain a game by his id")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Get a list of games that have coincide with the search string", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameResume.class)))),})
+    @GetMapping("/game/search/{contains}")
+    public ResponseEntity<Set<GameResume>> getGamesBySearch(@PathVariable String contains) {
+        logger.info("start searchGames");
+        Set<Game> games = gameImpl.findAll();
+        Set<GameResume> resumes = new HashSet();
+        for (Game g : games) {
+            if (g.getName().toLowerCase().contains(contains.toLowerCase())) {
+                System.out.println(g.getName().toLowerCase());
+                System.out.println(contains.toLowerCase());
+                GameResume resume = new GameResume(g);
+                resumes.add(resume);
+            }
+
+        }
+        
+        logger.info("end searchGames");
+        return new ResponseEntity<>(resumes, HttpStatus.OK);
+    }
+
     @Operation(summary = "saves a new game")
     @ApiResponse(responseCode = "401", description = "duplicated game ", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameResumeNoId.class))))
     @ApiResponses(value = {
@@ -86,9 +108,9 @@ public class GameController {
     public ResponseEntity<GameResumeNoId> addGame(@RequestBody GameResumeNoId gr) { //Refactorizable, en vez de buscar por la lista buscalo por nombre y si devuelve un juego, pues error
         Game game = new Game(gr);
         Set<Game> games = gameImpl.findAll();
-        for(Game g: games) {
+        for (Game g : games) {
             if (g.getName().toLowerCase().equals(game.getName().toLowerCase())) {
-                return new ResponseEntity<>(gr,HttpStatus.CONFLICT);
+                return new ResponseEntity<>(gr, HttpStatus.CONFLICT);
             }
         }
         gameImpl.addGame(game);
@@ -112,11 +134,10 @@ public class GameController {
     @GetMapping("/game/{id}/achievementList")
     public ResponseEntity<AchievementList> getAchievementList(@PathVariable long id) {
 
-        Game game = gameImpl.findById(id).get();   
+        Game game = gameImpl.findById(id).get();
         List<Achievement> list = game.getAchievements();
-        System.out.println(list.size());
         AchievementList al = new AchievementList(list);
-        
+
         return new ResponseEntity<>(al, HttpStatus.OK);
     }
 
@@ -132,25 +153,16 @@ public class GameController {
         return new ResponseEntity<>(cl, HttpStatus.OK);
     }
 
-    @Operation(summary = "Obtain the list of clients that own this game")
+    @Operation(summary = "Obtain the details of this game")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "get the clients that own the game", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientList.class)))),})
+        @ApiResponse(responseCode = "200", description = "get the details of the game", content = @Content(array = @ArraySchema(schema = @Schema(implementation = ClientList.class)))),})
     @GetMapping("/game/details/{name}")
     public ResponseEntity<GameResume> getGameByName(@PathVariable String name) {
         logger.info("start getGame");
         Game c = gameImpl.findByName(name).get();
         GameResume resume = new GameResume(c);
-        System.out.println(resume.getGameId());
         logger.info("fin getGame");
         return new ResponseEntity<>(resume, HttpStatus.OK);
     }
 
-    @ApiResponses(value = {
-        @ApiResponse(responseCode = "200")})
-        public ResponseEntity<Response> getErrorResponse(){
-        return new ResponseEntity<>(Response.errorResonse(500, "That game alreadyExists"), HttpStatus.CONFLICT);
-    }
-    
-    
-    
 }

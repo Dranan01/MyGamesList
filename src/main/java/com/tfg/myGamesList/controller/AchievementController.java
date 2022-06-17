@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Francisco Miguel Pérez
  */
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "achievement", description = "methods about all the achievements on the database")
 @RestController
 public class AchievementController {

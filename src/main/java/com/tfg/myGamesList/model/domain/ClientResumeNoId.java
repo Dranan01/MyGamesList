@@ -22,12 +22,18 @@ public class ClientResumeNoId {
     @Schema(description = "username of the client, used for log in", example = "XxMatthyxX", required = true)
     private String username;
 
+    @Schema(description = "Descriptrion in the profile of the client", example = "My name is Mr Potatoe", required = true)
+    private String description;
+
+    @Schema(description = "email of the client", example = "asdkjgnbadsjkhlgblsa@tal.com", required = true)
+    private String email;
+
     @Schema(description = "password of the client, used for log in", example = "@1234Potatoe", required = true)
     private String password;
-    
+
     @Schema(description = "boolean to know if the client i logged or not", example = "true", required = true)
     private boolean logged;
-    
+
     @Schema(description = "profilePic direction", example = "assets/users/1", required = true)
     private String profilePic;
 
