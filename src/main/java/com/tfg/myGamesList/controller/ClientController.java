@@ -43,8 +43,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Francisco Miguel Pérez
  */
 @Tag(name = "client", description = "methods about all the clients on the database")
-@CrossOrigin(origins = "http://localhost:4200")
+
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/")
 public class ClientController {
 
@@ -168,12 +169,12 @@ public class ClientController {
 
         
         for (Game games : client.getGames()) {
-            if (!games.getGameId().equals(game.getGameId())) {
+            if (games.getGameId().equals(game.getGameId())) {
                 found = true;
             }
         }
         
-        if (client.getGames().isEmpty() || !found) {
+        if (client.getGames().isEmpty() || found==false) {
             client.getGames().add(game);
             clientImpl.addClient(client);
         }
@@ -185,7 +186,7 @@ public class ClientController {
     @Operation(summary = "deletes a game from the gametList of the client ")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "deletes a game from the list of the games that the client has", content = @Content(array = @ArraySchema(schema = @Schema(implementation = GameList.class)))),})
-    @DeleteMapping("/client/{id}/GameList/game/{gameId}")
+    @GetMapping("/client/{id}/game/{gameId}/delete")
     public void deleteGameFromGameList(@PathVariable long id, @PathVariable long gameId) {
         Client client = clientImpl.findById(id).get();
         Game game = gameImpl.findById(gameId).get();

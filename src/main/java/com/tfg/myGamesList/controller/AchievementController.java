@@ -56,7 +56,7 @@ public class AchievementController {
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "List of achievements", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResume.class)))),})
     @GetMapping("achievement/")
-    public ResponseEntity<Set<GameResume>> getClients() {
+    public ResponseEntity<Set<AchievementResume>> getAchievements() {
         logger.info("start getAchievements");
         Set<Achievement> achievements = achievementImpl.findAll();
         Set<AchievementResume> resume = new HashSet<>();
@@ -83,7 +83,7 @@ public class AchievementController {
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "Saves a new achievement ", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResumeNoId.class)))),})
     @PostMapping("/achievement/game/{gameId}")
-    public ResponseEntity<AchievementResumeNoId> addGame(@RequestBody AchievementResumeNoId ar, @PathVariable long gameId) {
+    public ResponseEntity<AchievementResumeNoId> addAchievement(@RequestBody AchievementResumeNoId ar, @PathVariable long gameId) {
         Achievement achievement = new Achievement(ar);
         Game game = gameImpl.findById(gameId).get();
         achievement.setGame(game);
@@ -133,5 +133,6 @@ public class AchievementController {
         
         return new ResponseEntity<>(gr, HttpStatus.GONE);
     }
+    
 
 }
